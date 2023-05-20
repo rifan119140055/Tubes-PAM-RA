@@ -297,7 +297,7 @@ const ProductInfo = ({route, navigation}) => {
                   }}
                 />
               </View>
-              <Text> Rustaveli Ave 57,{'\n'}17-001, Batume</Text>
+              <Text> Gedong Tataan,{'\n'}Pesawaran</Text>
             </View>
             <Entypo
               name="chevron-right"
@@ -319,11 +319,11 @@ const ProductInfo = ({route, navigation}) => {
                 color: COLOURS.black,
                 marginBottom: 4,
               }}>
-              &#8377; {product.productPrice}.00
+              Rp {product.productPrice}.00
             </Text>
             <Text>
-              Tax Rate 2%~ &#8377;{product.productPrice / 20} (&#8377;
-              {product.productPrice + product.productPrice / 20})
+              {/* Tax Rate 2%~ &#8377;{product.productPrice / 20} (&#8377;
+              {product.productPrice + product.productPrice / 20}) */}
             </Text>
           </View>
         </View>
@@ -356,7 +356,7 @@ const ProductInfo = ({route, navigation}) => {
               color: COLOURS.white,
               textTransform: 'uppercase',
             }}>
-            {product.isAvailable ? 'Add to cart' : 'Not Avialable'}
+            {product.isAvailable ? 'Tambah Ke Keranjang' : 'Not Avialable'}
           </Text>
         </TouchableOpacity>
       </View>

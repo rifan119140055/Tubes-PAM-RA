@@ -75,7 +75,7 @@ const Home = ({navigation}) => {
                 position: 'absolute',
                 width: '20%',
                 height: '24%',
-                backgroundColor: COLOURS.green,
+                //backgroundColor: COLOURS.green,
                 top: 0,
                 left: 0,
                 borderTopLeftRadius: 10,
@@ -90,7 +90,7 @@ const Home = ({navigation}) => {
                   fontWeight: 'bold',
                   letterSpacing: 1,
                 }}>
-                {data.offPercentage}%
+                {/* {data.offPercentage}% */}
               </Text>
             </View>
           ) : null}
@@ -159,7 +159,7 @@ const Home = ({navigation}) => {
             </View>
           )
         ) : null}
-        <Text>&#8377; {data.productPrice}</Text>
+        <Text>Rp {data.productPrice}</Text>
       </TouchableOpacity>
     );
   };
@@ -274,7 +274,7 @@ const Home = ({navigation}) => {
                 color: COLOURS.blue,
                 fontWeight: "400",
               }}>
-              SeeAll
+              {/* SeeAll */}
             </Text>
           </View>
           <View
@@ -330,7 +330,7 @@ const Home = ({navigation}) => {
                 color: COLOURS.blue,
                 fontWeight: "400",
               }}>
-              SeeAll
+              {/* SeeAll */}
             </Text>
           </View>
           <View
@@ -385,7 +385,7 @@ const Home = ({navigation}) => {
                 color: COLOURS.blue,
                 fontWeight: "400",
               }}>
-              SeeAll
+              {/* AllSee */}
             </Text>
           </View>
           <View

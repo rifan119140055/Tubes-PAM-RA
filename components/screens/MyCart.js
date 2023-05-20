@@ -148,11 +148,11 @@ const MyCart = ({navigation}) => {
                   maxWidth: '85%',
                   marginRight: 4,
                 }}>
-                &#8377;{data.productPrice}
+                Rp {data.productPrice}
               </Text>
               <Text>
-                (~&#8377;
-                {data.productPrice + data.productPrice / 20})
+                {/* (Rp 
+                {data.productPrice}) */}
               </Text>
             </View>
           </View>
@@ -257,7 +257,7 @@ const MyCart = ({navigation}) => {
               color: COLOURS.black,
               fontWeight: '400',
             }}>
-            Order Details
+            Detail Pemesanan
           </Text>
           <View></View>
         </View>
@@ -271,7 +271,7 @@ const MyCart = ({navigation}) => {
             paddingLeft: 16,
             marginBottom: 10,
           }}>
-          My Cart
+          Keranjang
         </Text>
         <View style={{paddingHorizontal: 16}}>
           {product ? product.map(renderProducts) : null}
@@ -290,7 +290,7 @@ const MyCart = ({navigation}) => {
                 letterSpacing: 1,
                 marginBottom: 20,
               }}>
-              Delivery Location
+              Lokasi Pengiriman
             </Text>
             <View
               style={{
@@ -329,7 +329,7 @@ const MyCart = ({navigation}) => {
                       color: COLOURS.black,
                       fontWeight: '500',
                     }}>
-                    2 Petre Melikishvili St.
+                    Gedong Tataan
                   </Text>
                   <Text
                     style={{
@@ -339,7 +339,7 @@ const MyCart = ({navigation}) => {
                       lineHeight: 20,
                       opacity: 0.5,
                     }}>
-                    0162, Tbilisi
+                    Pesawaran
                   </Text>
                 </View>
               </View>
@@ -362,7 +362,7 @@ const MyCart = ({navigation}) => {
                 letterSpacing: 1,
                 marginBottom: 20,
               }}>
-              Payment Method
+              Metode Pembayaran
             </Text>
             <View
               style={{
@@ -393,7 +393,7 @@ const MyCart = ({navigation}) => {
                       color: COLOURS.blue,
                       letterSpacing: 1,
                     }}>
-                    VISA
+                    BCA
                   </Text>
                 </View>
                 <View>
@@ -403,7 +403,7 @@ const MyCart = ({navigation}) => {
                       color: COLOURS.black,
                       fontWeight: '500',
                     }}>
-                    Visa Classic
+                    BCA
                   </Text>
                   <Text
                     style={{
@@ -437,7 +437,7 @@ const MyCart = ({navigation}) => {
                 letterSpacing: 1,
                 marginBottom: 20,
               }}>
-              Order Info
+              Info Pemesanan
             </Text>
             <View
               style={{
@@ -454,7 +454,7 @@ const MyCart = ({navigation}) => {
                   color: COLOURS.black,
                   opacity: 0.5,
                 }}>
-                Subtotal
+                Total
               </Text>
               <Text
                 style={{
@@ -463,7 +463,7 @@ const MyCart = ({navigation}) => {
                   color: COLOURS.black,
                   opacity: 0.8,
                 }}>
-                &#8377;{total}.00
+                Rp {total}.00
               </Text>
             </View>
             <View
@@ -481,7 +481,7 @@ const MyCart = ({navigation}) => {
                   color: COLOURS.black,
                   opacity: 0.5,
                 }}>
-                Shipping Tax
+                Ongkos Kirim
               </Text>
               <Text
                 style={{
@@ -490,7 +490,7 @@ const MyCart = ({navigation}) => {
                   color: COLOURS.black,
                   opacity: 0.8,
                 }}>
-                &#8377;{total / 20}
+                Rp {total / 20}
               </Text>
             </View>
             <View
@@ -515,7 +515,7 @@ const MyCart = ({navigation}) => {
                   fontWeight: '500',
                   color: COLOURS.black,
                 }}>
-                &#8377;{total + total / 20}
+                Rp {total + total / 20}
               </Text>
             </View>
           </View>
@@ -549,7 +549,7 @@ const MyCart = ({navigation}) => {
               color: COLOURS.white,
               textTransform: 'uppercase',
             }}>
-            CHECKOUT (&#8377;{total + total / 20} )
+            CHECKOUT (Rp{total + total / 20} )
           </Text>
         </TouchableOpacity>
       </View>
